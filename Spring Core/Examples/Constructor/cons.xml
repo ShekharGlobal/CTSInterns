@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Address Bean Definitions using Constructor Injection 
+    
+     Injector Class:
+     The Spring container (configured via the XML file) acts as the injector.
+     The cons.xml configuration file defines the beans and their dependencies,
+      injecting Address objects into Employee objects.
+    
+    -->
+    <bean id="a1" class="com.coforge.constructor.Address">
+        
+        <constructor-arg value="OMR" type="String" index="0"/> <!-- addressLine1 -->
+        <constructor-arg value="Chennai"/> <!-- city -->
+        <constructor-arg value="TN"/> <!-- state -->
+        <constructor-arg value="India"/> <!-- country -->
+        
+    </bean>
+
+    <bean id="address2" class="com.coforge.constructor.Address">
+        <constructor-arg value="Ameerpet"/> <!-- addressLine1 -->
+        <constructor-arg value="Hyderabad"/> <!-- city -->
+        <constructor-arg value="Telangana"/> <!-- state -->
+        <constructor-arg value="India"/> <!-- country -->
+    </bean>
+    
+    
+
+    <!-- Employee Bean Definitions using Constructor Injection -->
+    <bean id="obj" class="com.coforge.constructor.Employee">
+        <constructor-arg value="101"/> <!-- id -->
+        <constructor-arg value="Venkat R"/> <!-- name -->
+        <constructor-arg ref="a1"/> <!-- Address object reference -->
+    </bean>
+
+    <bean id="obj2" class="com.coforge.constructor.Employee">
+        <constructor-arg value="102"/> <!-- id -->
+        <constructor-arg value="Sai S"/> <!-- name -->
+        <constructor-arg ref="address2"/> <!-- Address object reference -->
+    </bean>
+
+</beans>
