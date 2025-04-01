@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="a1" class="com.coforge.setter.Address">
+		<property name="addressLine1" value="OMR"></property>
+		<property name="city" value="Chennai"></property>
+		<property name="state" value="TN"></property>
+		<property name="country" value="India"></property>
+		
+		
+	</bean>
+
+
+	<bean id="address2" class="com.coforge.setter.Address">
+		<property name="addressLine1" value="Ameerpet"></property>
+		<property name="city" value="Hyderabad"></property>
+		<property name="state" value="Telengana"></property>
+		<property name="country" value="India"></property>
+	</bean>
+
+	<bean id="obj" class="com.coforge.setter.Employee">
+
+		<property name="id" value="101"></property>
+		<property name="name" value="Venkat R"></property>
+		<property name="address" ref="a1"></property>
+
+	</bean>
+
+	<bean id="obj2" class="com.coforge.setter.Employee">
+		<property name="id" value="102"></property>
+		<property name="name" value="Sai S"></property>
+		<property name="address" ref="address2"></property>
+
+	</bean>
+
+
+
+</beans>
