@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Custom PMD Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 
+                             https://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>
+        Custom ruleset to catch common Java code issues including unused variables, empty methods,
+        excessive method length, and use of System.out.println.
+    </description>
+
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+    <rule ref="category/java/errorprone.xml/SystemPrintln"/>
+    <rule ref="category/java/codestyle.xml/EmptyMethod"/>
+    <rule ref="category/java/design.xml/ExcessiveMethodLength"/>
+
+</ruleset>
