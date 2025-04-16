@@ -1,0 +1,30 @@
+git init
+git config --global user.name "shekhar"
+git config --global user.email "traininglabit@gmail.com"
+git config --global --list 
+echo "Welcome to the version control">>welcome.txt
+git status
+git add .
+git remote add origin https://github.com/ShekharGlobal/myrepos.git
+git push -u origin master 
+
+# branches 1
+git checkout -b b1 git add welcome.txt
+git commit -m "Added welcome.txt to branch b1" git push origin b1
+# branches 2
+git  checkout  master
+git checkout -b b2 git add welcome.txt
+git commit -m "Added welcome.txt to branch b2" git push origin b2
+
+git checkout b1 notepad “welcome.txt” # make some change git status
+ 
+git add .
+git commit –m “hi” git push –u origin b1 # Merge b1
+git checkout master git merge b1
+# Merge b2
+git merge b2
+# Push the updated master branch
+git push origin master # repeat for b2
+# Cleanup (optional)
+git branch -d b1 git branch -d b2
+git push origin --delete b1 git push origin --delete b2
