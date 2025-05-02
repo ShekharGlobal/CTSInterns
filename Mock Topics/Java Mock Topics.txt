@@ -1,0 +1,71 @@
+Java 8 
+=======================================================================================================================
+
+Lambda Expressions – Enables functional-style programming by allowing concise syntax for defining anonymous functions.
+
+==========================================================================================================================
+
+Streams API – Provides a powerful way to process collections with functional programming techniques.
+-------------------------------------------------------------------
+A) Creation Methods
+stream() – Converts a collection into a stream.
+
+of() – Creates a stream from specific values.
+
+generate() – Creates an infinite stream based on a function.
+
+iterate() – Generates sequential elements using a function.
+.....................................................................
+B) Filtering and Transformation Methods
+map() – Transforms elements using a function.
+
+flatMap() – Flattens nested structures and maps each element.
+
+filter() – Selects elements that match a given predicate.
+-------------------------------------------------------------------------------
+C) Sorting and Ordering Methods
+sorted() – Sorts elements in natural order or using a custom comparator.
+
+distinct() – Removes duplicate elements.
+----------------------------------------------------------------------------------
+D) Aggregation and Reduction Methods
+reduce() – Combines elements into a single result.
+
+collect() – Gathers elements into a collection (like List, Set).
+
+count() – Returns the number of elements.
+
+max() and min() – Finds the maximum/minimum element.
+---------------------------------------------------------------------------------------------
+E) Iteration and Terminal Methods
+forEach() – Performs an action on each element.
+
+toArray() – Collects elements into an array.
+
+findFirst() and findAny() – Retrieves first or any element from the stream.
+-------------------------------------------------------------------------------------------------
+F) Short-Circuiting Methods
+limit(n) – Retrieves only n elements.
+
+skip(n) – Skips the first n elements.
+
+anyMatch(), allMatch(), noneMatch() – Checks if elements match given conditions.
+=============================================================================================================================
+Functional Interfaces – Interfaces with a single abstract method used to enable lambda expressions.
+java.util.function pacakage
+===============================================================================================================================
+
+Default and Static Methods in Interfaces – Allows interfaces to have method implementations, improving flexibility in API design.
+==================================================================================================================================
+Optional Class – Helps in handling null values more effectively.
+==================================================================================================================================
+New Date and Time API – Introduces modern and flexible date/time handling with java.time package.
+=======================================================================================================================================
+
+Try-catch, throws, throw, finally
+Try with Resource
+collection Framework List, Set, Map,Comparator, Comparable
+===========================================================================================================================
+
+Method References – Enables referencing methods of existing classes in lambda expressions.
+==========================================================================================================================

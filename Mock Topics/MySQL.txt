@@ -1,0 +1,38 @@
+MySQL
+
+A. Select Query:
+	1. Groupby
+	2. Having
+	3. sort
+
+B. Constraints
+ 	1. Primary Key/composite Key/Candidate Key
+ 	2. Foreign Key
+	3. NULL/ NOT NULL
+	4. Check Constraints
+
+C. Alter Query
+    1. Table
+    2  Column
+    3  Data type
+    4  Rename
+
+D) Rollback & Save Point
+
+E. Joins
+    1 Inner
+    2 Outer
+         Left
+         Right
+    3. Full
+
+F. SubQuery and Corelated SubQuery
+
+G Scaler Function
+      1. Math/ Numeric
+      2. Date
+H. Operators
+       1.Like
+       2.Between
+
+      
