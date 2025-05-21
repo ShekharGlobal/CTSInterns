@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row justify-content-center mt-5">
+<div class="col-md-8 col-lg-6 text-center bg-light p-5 rounded shadow">
+  <h1 class="display-4 text-primary mb-4">Welcome to {{ title }}!</h1> <!-- Dynamic binding -->
+      <p class="lead text-muted">
+        We're glad you're here. Explore our application and discover all the features we 
+        have to offer.
+      </p>
+<a class="btn btn-primary btn-lg mt-3" href="#" role="button">Get Started</a>
+    </div>
+  </div>
+</div>
