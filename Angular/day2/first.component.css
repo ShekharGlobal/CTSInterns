@@ -1,0 +1,19 @@
+/* first.component.css */
+.first-item {
+    color: rgb(128, 87, 0);
+    font-weight: bold;
+  }
+  
+  .last-item {
+    color: rgb(0, 8, 255);
+    font-weight: bold;
+  }
+  
+  .even-item {
+    background-color: #b765e633;
+  }
+  
+  .odd-item {
+    background-color: #e0e0e0;
+  }
+  
