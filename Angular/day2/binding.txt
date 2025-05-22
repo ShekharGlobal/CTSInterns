@@ -1,0 +1,19 @@
+----------------------------------------------------
+.htm
+
+<!-- ------------------Button Property Binding and event Binding--------------------------------------------- -->
+
+<button [disabled]="isDisabled">Click Me!</button>
+
+<button (click)="toggleButtonState()">Toggle Disabled State</button>
+
+
+
+------------------------------------------------------------------------------------------
+
+.ts
+
+isDisabled: boolean = true;  // Component property
+  //event Binding
+  toggleButtonState() {
+    this.isDisabled = !this.isDisabled;  // Toggle the value of isDisabled
