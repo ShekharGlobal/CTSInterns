@@ -1,0 +1,6 @@
+//Data goes from Parent to Child using @Input()
+  @Input() parentMessage: string = '';
+
+  // Sending message to FirstComponent via @Output
+  //Data goes from Child to Parent using @Output() + EventEmitter
+  @Output() messageEvent = new EventEmitter<string>();
