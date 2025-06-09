@@ -1,0 +1,69 @@
+***********************************TypeScript******************************
+1.what is typescript
+2.how to install type script, compile and run typescript?
+3. what arrow function in typescript?
+4. what are difference between normal function and typescript function?
+6.which data types supported in typescript
+8.How to represent long in typescript?
+9.what is spread operator?
+10.how to define class and Object in typescript
+12.can we create a abstract class in type script? if yes then give an example with code?
+13. how to define and implement an interface in typescript?
+14.explain different access specifier in typescript?
+15.explain encapsulation , inheritance in typescript?
+16.what is async, await and promises? explain with example?
+ 
+ 
+ 
+****************************Angular**************************************
+ 
+ 
+1.what is Angular and why to use?
+2.How does angular application works?
+3.What is Single page application?
+4.explain the project structure of Angular
+5. which file is the entry point in Angular?
+6.what is components in Angular? explain the life cycle hook methods of Component?
+7.How to create a component in Angular?
+8.if you want to create a component with test file then which command we need to write
+9.what is data binding? How to implement one-way, two-way databinding in angular?
+10.what is even handling ? how to bind event in angular?
+11.what is interpolaion?
+12. how to implement DI feature in Angular
+13.what is pipes in Angular?
+14.list out important built in  pipes in Angular? Write code  to create our own custom pipe 
+15.what are different phases of Angular component?
+16.what is directives in Angular?
+17.explain the different directives in Angular? like *ngIf, *ngFor, *ngSwitch, ngModel, ngClass, ngStyle
+18.How many ways we can define the forms in angular?
+19.what is template in Angular?
+20.write a code to share a data from parent to child component?
+21. what is ? operator in Angular?
+22.what signal in Angular?
+23.what do you mean by asynchronous communication?
+24. what is Observable? what are the difference between Promises and Observable
+25. what are different phases of Observable ?
+26.what are lify cycle methods are available in create phase?
+27.how to unsubscribe Observable object
+28. what is proper naming convention to declare Observale type of variable
+29.How to implement Redux pattern in Angular?
+30.Which commands we use to install and add ngrx library?
+31. what is Store? Action? Reducer? 
+32. How component can select a shared state from Store
+33.explain all steps to create Action, Reducer, registering store and select state with coding example
+ 
+34. when we need NgRx , give a real time scenario?
+35.how to integrate spring boot rest Api with Angular?
+36. what are major differences between Angular 16 and Angular 19?
+37.what is routing and how many ways we can implement routing in angular?
+38. what is the use <router-outlet> tag?
+39. what is difference between routerLink and href?
+40.How to use bootstarp in Angular?
+41. How to add an image or icon in angular?
+42.How to implement QueryParameter in Angular router?
+43. what is adavantages of Angular services?
+44.what is decorator in angular? explain @Inject, @Component
+45. can I create a Component without spec file? if so then How to create?
+46.How to run angular app with different port number?
+47.How to implement conditional rendering in angular?
+ 
