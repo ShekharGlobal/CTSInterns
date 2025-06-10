@@ -1,0 +1,118 @@
+1. Introduction
+
+2. About project
+
+3. Hibernate
+
+4. Spring Data JPA
+
+5. Inner Join, Outer Join
+
+6. yml file
+
+7. pom.xml
+
+8. CASCADE_TYPE
+
+9. @JsonManagedReference, @JsonBackReference (based on project)
+
+10. Spring Security
+
+11. Annotations about project
+
+12. Spring Initializer
+
+13.	 Bean is threadsafe or not?
+
+14. Application.proerties-> can we add more than one application.properties in a single project?
+
+15. Explain ORM from scratch
+
+16. Design Patterns of Spring boot
+
+17. IOC Container
+
+18. @ExceptionHandler
+ 
+expected programs from collection and map during interview
+ 
+1. Remove duplicate from an ArrayList
+2.Find mosr frequent element in a list
+3. find first non-repeating element in list
+4. reverse an arraylist without Collection.reverse() method
+5.sort an arraylist indecending order
+ 
+ 
+6. Find common elements between two HashSets. 
+7.Check if one Set is a subset of another. 
+8. Convert a List to a Set and remove duplicates. 
+9. Find the union and intersection of two Sets. 
+10. Generate all possible subsets of a given Set.
+ 
+12.Merge two HashMaps and sum values of common keys.
+13. Find the most repeated word in a List<String> using a Map. 
+14 Sort a HashMap by values instead of keys. 
+15. Group words by their first letter using a Map. 
+16 Count the frequency of characters in a string using Map.
+ 
+ 
+ 
+ 
+expected java programs from stream API during interview
+1. Sum of all numbers in a list using reduce(). 
+2. Find the maximum and minimum values in a list using max() and min(). 
+3. Count frequency of each character in a string using groupingBy(). 
+4 Convert a list of strings to uppercase using map(). 
+5.Filter even numbers from a list using filter().
+ 
+ 
+6. Sort a list of strings by length using sorted(). 
+7.Group words by their first letter using groupingBy(). 
+8. Sort a list of objects by a specific field using Comparator.
+9.Find the longest string in a list using max(). 
+10.Sort numbers in descending order using sorted(Comparator.reverseOrder()).
+ 
+ 
+11. Find the average of all numbers in a list using mapToInt().average(). 
+12. Find the sum of squared numbers using map() and reduce(). 
+13. Find distinct elements in a list using distinct(). 
+14 Merge two lists into one using flatMap(). 
+15. Remove duplicate elements from a list using collect(Collectors.toSet()).
+ 
+ 
+16. Find the first non-repeating character in a string using groupingBy().
+17.Find common elements between two lists using retainAll(). 
+18. Check if all elements in a list are even using allMatch(). 
+19. Convert a list of integers to a comma-separated string using joining(). 
+20 Count words in a sentence using Collectors.counting() and groupingBy().
+ 
+java interview programs on string and string buffer
+ 
+ 
+1 Reverse a string without using built-in functions. 
+2. Check if a string is a palindrome. 
+3. Count the number of words in a string. 
+4. Remove all vowels from a string. 
+5.Find the first non-repeating character in a string.
+ 
+ 
+6. Count the frequency of each character in a string. 
+7. Convert a string to uppercase and lowercase using custom logic. 
+8. Replace spaces in a string with a specific character (%20). 
+9. Remove duplicate characters from a string. 
+11. Find the most repeated character in a string.
+ 
+12 Find all substrings of a given string. 
+13. Check if two strings are anagrams. 
+14.Find the longest substring without repeating characters. 
+15 Check if a string contains only digits. 
+16.Extract numeric characters from a string.
+ 
+ 
+17 Sort words in a string alphabetically.
+18. Reverse words in a sentence but maintain word order.
+19. Capitalize the first letter of each word in a sentence. 
+20. Count occurrences of a given word in a sentence.
+21 Find the longest word in a sentence.
+ 
+ 
