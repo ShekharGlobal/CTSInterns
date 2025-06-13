@@ -1,0 +1,44 @@
+mvn clean package
+
+sudo apt-get update 
+sudo apt-get install openjdk-17-jdk
+
+# Step 1: Download JDK 21
+wget https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz
+
+# Step 2: Extract the archive
+tar -xvzf jdk-21_linux-x64_bin.tar.gz
+
+# Step 3: Set environment variables
+
+export JAVA_HOME=$HOME/jdk-21.0.7
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Step 4: Verify Java 21 is active
+java -version
+
+# Step 5: Run your Spring Boot JAR
+java -jar Cloud-0.0.1-SNAPSHOT.jar
+
+gcloud compute instances list
+
+gcloud compute instances add-tags instance-20250611-114755 \
+  --tags=web-server \
+  --zone=asia-south1-c
+
+
+gcloud compute firewall-rules create allow-http-8080 \
+    --allow tcp:8080 \
+    --target-tags YOUR_VM_TAG \
+    --source-ranges=0.0.0.0/0 \
+    --description="Allow HTTP traffic on port 8080"
+
+
+ps aux | grep cloud
+curl http://localhost:8080/h1
+
+
+Lenovo, IdeaPad
+PF2Y828k
+
+ssh user@34.47.224.21
