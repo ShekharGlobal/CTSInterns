@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Web Storage</title>
+</head>
+<body>
+
+<h2>Web Storage Example</h2>
+
+<button onclick="saveLocal()">Save Local Storage</button>
+<button onclick="saveSession()">Save Session Storage</button>
+<button onclick="deleteStorage()">Delete Storage</button>
+
+<p id="result"></p>
+
+<script>
+function saveLocal() {
+  localStorage.setItem("username", "Shekhar");
+  document.getElementById("result").innerText =
+    "Local Storage: " + localStorage.getItem("username");
+}
+
+function saveSession() {
+  sessionStorage.setItem("course", "HTML5");
+  document.getElementById("result").innerText =
+    "Session Storage: " + sessionStorage.getItem("course");
+}
+
+function deleteStorage() {
+  localStorage.removeItem("username");
+  sessionStorage.clear();
+  document.getElementById("result").innerText =
+    "Storage Deleted";
+}
+</script>
+
+</body>
+</html>
