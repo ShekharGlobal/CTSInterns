@@ -1,0 +1,42 @@
+git init
+git config --global user.name "shekhar"
+git config --global user.email "traininglabit@gmail.com"
+git config --global --list
+
+echo "Welcome to the version control" >> welcome.txt
+git status
+git add .
+git commit -m "Initial commit with welcome.txt"
+
+git remote add origin https://github.com/ShekharGlobal/myrepos.git
+git push -u origin master
+
+git checkout -b b1
+echo "Change from branch b1" > welcome.txt
+git add welcome.txt
+git commit -m "Update from b1"
+git push -u origin b1
+
+git checkout master
+git checkout -b b2
+echo "Change from branch b2" > welcome.txt
+git add welcome.txt
+git commit -m "Update from b2"
+git push -u origin b2
+
+
+git checkout master
+git merge b1
+git merge b2
+
+git status
+
+notepad welcome.txt
+git push origin master
+
+git checkout master
+git branch -d b1
+git branch -d b2
+
+git push origin --delete b1
+git push origin --delete b2
