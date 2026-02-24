@@ -1,0 +1,15 @@
+resilience4j:
+  retry:
+    instances:
+      employeeServiceRetry:
+        maxAttempts: 1
+  circuitbreaker:
+    instances:
+      employeeServiceCB:
+        slidingWindowSize: 1
+        failureRateThreshold: 50
+        waitDurationInOpenState: 5s
+  timelimiter:
+    instances:
+      employeeServiceTL:
+        timeoutDuration: 1s
