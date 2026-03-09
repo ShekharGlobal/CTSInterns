@@ -1,0 +1,26 @@
+
+http://localhost:8090/school/add
+{
+  "schoolId": "S1",
+  "schoolName": "Loyala School",
+  "schoolType": "Private",
+  "city": "Chennai"
+}
+
+======================================
+http://localhost:8090/school/register/S1
+
+[
+  {
+    "studentRollNumber": "R1",
+    "studentName": "Arun",
+    "studentAge": 15,
+    "studentGender": "Male",
+    "studentGrade": "10",
+    "studentSection": "A"
+  }
+]
+
+====================================
+
+http://localhost:8090/school/max/Chennai
