@@ -1,0 +1,27 @@
+[
+  {
+    "studentName": "Arun",
+    "studentGrade": "10",
+    "studentSection": "A"
+  },
+
+http://localhost:8090/school/add
+{
+  "schoolName": "Loyola School",
+  "schoolType": "Private",
+  "city": "Chennai"
+}
+
+http://localhost:8090/school/register/1  
+
+{
+    "studentName": "Priya",
+    "studentGrade": "10",
+    "studentSection": "B"
+  },
+  {
+    "studentName": "Rahul",
+    "studentGrade": "9",
+    "studentSection": "A"
+  }
+]
