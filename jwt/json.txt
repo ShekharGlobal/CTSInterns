@@ -1,0 +1,33 @@
+ post-http://localhost:8090/students/register
+
+{
+  "studentName": "John",
+  "studentRollNumber": "101",
+  "studentAge": 15,
+  "studentGender": "Male",
+  "studentGrade": "10",
+  "studentSection": "A",
+  "email": "admin@gmail.com",
+  "password": "1234"
+}
+
+=====================================
+
+http://localhost:8090/auth/login
+
+{
+  "email": "admin@gmail.com",
+  "password": "1234"
+}
+
+Copy
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpYXQiOjE3NzM3Njg3NjIsImV4cCI6MTc3Mzc3MjM2Mn0.a3emcaLHmoG4Rb2rjIr6YggRqaXR1UZTDlQyEdzqfFU"
+}
+
+Get-http://localhost:8090/students/profile
+
+Authorization
+Bearer To-- Paste
+
+Get-http://localhost:8090/schools
