@@ -1,0 +1,188 @@
+
+1. CREATE COURSES
+Post- http://localhost:1111/courses
+
+{
+  "name": "Java",
+  "description": "Core Java"
+}
+
+{
+  "name": "Spring Boot",
+  "description": "Microservices"
+}
+
+{
+  "name": "React",
+  "description": "Fronend"
+}
+Response
+
+{
+    "id": 1,
+    "name": "Java",
+    "description": "Core Java",
+    "studentIds": []
+}
+
+{
+    "id": 2,
+    "name": "Spring Boot",
+    "description": "Microservices",
+    "studentIds": []
+}
+
+{
+    "id": 3,
+    "name": "React",
+    "description": "Fronend",
+    "studentIds": []
+}
+====================================
+
+2. CREATE STUDENT
+Post- http://localhost:1111/students
+
+{
+  "name": "Venkat",
+  "courseIds": []
+}
+
+{
+  "name": "Ravi",
+  "courseIds": []
+}
+
+Response
+{
+    "id": 1,
+    "name": "Venkat",
+    "courseIds": []
+}
+
+{
+    "id": 2,
+    "name": "Ravi",
+    "courseIds": []
+}
+===================================
+
+3. ADD COURSES TO STUDENT (Many-to-Many)
+Post
+http://localhost:1111/students/1/courses
+
+[1, 2]
+
+Response
+{
+    "id": 1,
+    "name": "Venkat",
+    "courseIds": [
+        1,
+        2
+    ]
+}
+
+http://localhost:1111/students/2/courses
+
+[1, 3]
+
+Response
+{
+    "id": 2,
+    "name": "Ravi",
+    "courseIds": [
+        1,
+        3
+    ]
+}
+=============================
+
+4. GET STUDENT WITH COURSES
+
+Get-http://localhost:1111/students/1
+
+Response
+{
+    "id": 1,
+    "name": "Venkat",
+    "courses": [
+        {
+            "id": 1,
+            "name": "Java",
+            "description": "Core Java"
+        },
+        {
+            "id": 2,
+            "name": "Spring Boot",
+            "description": "Microservices"
+        }
+    ]
+}
+
+http://localhost:1111/students/2
+{
+    "id": 2,
+    "name": "Ravi",
+    "courses": [
+        {
+            "id": 1,
+            "name": "Java",
+            "description": "Core Java"
+        },
+        {
+            "id": 3,
+            "name": "React",
+            "description": "Fronend"
+        }
+    ]
+}
+
+============================================
+
+
+5. GET COURSE WITH STUDENTS
+http://localhost:1111/courses/1
+
+{
+    "id": 1,
+    "name": "Java",
+    "description": "Core Java",
+    "studentIds": [
+        1,
+        2
+    ]
+}
+
+http://localhost:1111/courses/2
+{
+    "id": 2,
+    "name": "Spring Boot",
+    "description": "Microservices",
+    "studentIds": [
+        1
+    ]
+}
+
+http://localhost:1111/courses/3
+{
+    "id": 3,
+    "name": "React",
+    "description": "Fronend",
+    "studentIds": [
+        2
+    ]
+}
+
+========================================================================
+🔥 RELATIONSHIP (Perfect Many-to-Many)
+Student	Courses
+Venkat	Java, Spring
+Ravi	Java, React
+
+Course	Students
+Java	Venkat, Ravi
+Spring	Venkat
+React	Ravi
+
+👉 ✅ This is exactly many-to-many
