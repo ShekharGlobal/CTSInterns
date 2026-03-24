@@ -1,0 +1,222 @@
+1. What is Agile?
+2. What is the difference between Agile and waterfall model.
+3. what are the benefits of Agile.
+4. What is a story?
+5. What is a story point?
+6. What is scrum?
+7. What is iteation?
+8. What is sprint?
+9. Benefits of Agil.
+10. what is burn down charts?
+11. What is stand up meeting?
+12. What is SOLID principles?
+13. What is design principles?
+14. What are the different design principles?
+15. What is design pattern? What are the different design patterns are there?
+16. Features of Java?
+17. How Memory management is handled in Java?
+18. What are the modules in Java architecture.
+19. Where does the exe stays.
+20. What is classloader. How does it work?
+21. What is bytecode and how jvm interprets it.
+22. When do I use JDK and JRE?
+23. Who invented Java?
+24. Who handles java now?
+25. How do you check the version of java.
+26. What is jar file?
+27. Why do I need a jar file and what benefit I get from jar file.
+28. How do I create a jar file.
+29. How do I unjar the jar file.
+30. What are data type of java?
+31. What are the primitive data type?
+32. Why do you need so many data types?
+33. What is string?
+34. What is String Buffer?
+35. What is String builder and difference between them?
+36. What is String pool?
+37. Scneario used for String and StringBuffer.
+38. What is thread safe?
+39. What is synchronization?
+40. Different types of synchronization?
+41. What is JIT?
+42. What is a constructor?
+43. What is copy constructor?
+44. What is the benfit of it?
+45. What is clone() in object class.
+46. What is the benfit of it?
+47. How do you write this clone method.
+48. What interface need to implement clone().
+49. Tell me the methods object class.
+50. What is the difference between hashcode and equals().
+51. What are the different ways of sorting an attributes of an object.
+52. What is static? what are the different ways a static keyword is used?  
+53. What is static block? When static block is executed?
+54. What is the abstract class? 
+55. What is the difference between abstract class and normal classes.
+56. What is the difference between abstract class and interfaces.
+57. What is an interface?
+58. What are the access modifiers?
+59. What is Protected variable?
+60. What is the difference between default and protected access speicifier.
+61. What is this keywrod.
+62. What is inheritance?
+63. What are the different types of inheritance are there.
+64. What is the diamond problem?
+65. When do you use interfaces and when do you use abstract classes?
+66. What is method overloading?
+67. What is IS-A and HAS-A Relationship?
+68. What is containment  / aggregation? Give me an example of it.
+69. What is method overloading.  Why do we need it.  What benefit we get it.
+70. What is method overriding? Why do you need it? 
+71. When is the decision taken for method overloading and method overriding?
+72. What is foreach loop?
+73. What is the use of super keyword? what is the use of super keyword for calling a function?
+74. What is a package? why do you require it and when do you require it?
+75. Why do you need getters and setters?
+76. I have a class and it has private attribute.  How do I access it and modify the private variable.
+77. What is exception handling?
+78. What are the type of exceptions?
+79. Name the checked exceptions.
+80. Name unchecked exceptions?
+81. Wat is the difference between exception and error?
+82. What is the difference between throw and thorws?
+83. How do you create a custom exception?
+84. Give me the hierarchy of classes of exception?
+85. What is throwable.  How is it related to exceptions?
+86. Can one try have multiple catches...
+87. There is a scenario,  try block is there, catch block is there with Exception class, another catch block RuntimeException and another catch block with IOException.
+88. What eclipse will give for this scenario.
+89. What is generics in java.
+90. Write the code for Generics.
+91. Where do I require for generic class.
+92. How do I sort the treemap by sorting the attribute of field of the object.
+93. What is the difference between iterator and listIterator.
+94. What is the top most class of collections?
+95. How do I store unique records in hashset.  Which methods you need to override to achive this.
+96. What is hashcode?
+97. Why do I need hashcode?
+98. What is the use buckets.
+99. Tell me the methods of ArrayList.
+100. What is the difference comparable and comparator.
+101. What is the return type of compareTo() when the objects are same.  1st obj > 2nd Obj, 1st Obj < 2nd Obj.
+102. What is hashmap?
+103. What is entrySet() in hashMap?
+104. when do I use hashMap?
+105. You store records in hashMap.  When you retrieve it, it will not be displayed in the same order which you have stored.
+106. What is thread-safe?
+107. Is hashMap thread safe?
+108. What is the difference synchronized hash map and concurrency hash map.
+109. What is the use of java reflection?
+110. Which is the topmost class/interface of collections?
+111. What is the use of List and Set?
+112. What is the difference between ArrayList and Linked List? Which is one bettr.  
+113. What is the use of Treeset.  
+114. How do you sort the attribute of an object using TreeSet
+115. What is the difference between TreeSet and TreeMap.
+116. Why do you require TreeMap? What benefit we get from Treemap.
+117. What is the difference between arraylist and vector.
+118. How do you create a thread in java.
+120. LIfe cycle of a thread - Explain each state of the thread.
+121. What is the difference between wait and sleep.
+122. How it releases from wait state.
+123. What are the parameters of sleep.
+124. What is thread join.
+125. What is synchornizatoin?
+126. What is exector service in threads?
+127. What is thread pool?
+128. What is callable interface?
+129. What is runnable and callable interface?
+130. What will happen if you insert the duplicate key in the hashmap.
+131. What are the java 8 features.
+132. What is a fnctional interface?
+133. Write one program for Consumer, producer, function, predicate. 
+134. What is method referencing?
+135. what is the use of lambda function?
+136. What is Nashorn JS execute engine in java 8 features.
+138. What are streas and what are the functoins of streams?
+139. What are the functions of Streams.
+140. What is Optional Class?
+141. List the functions of Optional Class.
+142. What is LocalDate and LocalTime in java 8.
+143. What is the difference between Date and LocalDate.
+144. What is sealed classes?
+145. What is Record.
+146. What are the use of Records.
+147. What is DTO?
+148. What is DAO?
+149. What is the difference between DAO and DTO?
+150. What is Maven?
+151. What is the fullform of POM.xml?
+152. What is the content of POM.xml
+153. What is the difference group id and artifact id.
+154. What maven does when a depencency is given.
+155. What is the scope of dependency?
+156. What will happen when the version is not specified in dependency?
+157. What are the different maven commands.  What are the operations you can perform with maven.
+158. What is PROVIDED in scope.
+159. Which site it will pick from the net.
+160. What are the different commands of Maven.
+161. What is Maven clean.
+162. What is maven validate.
+163. What is maven compile.
+164. What is maven test.
+165. What is maven plugin.
+166. What is maven install.
+167. What is Optional class in Java 8 Features.
+168. What is method referncing in Java 8.
+169. How do you load a class at runtime.. 
+170. What function of Object class which gets the information about the class at runtime.
+171 How do I sort the attribute of an object in TreeMap.
+171. What is synchronized block?
+172. Who executes the main().  Why it is static main().
+173. What is serializable and cloneable interfaces.
+174. What @Override will do.  If it is not matching the function method signature is not matching then what @Override. 
+175. What is Logger and what is the benefit of this?
+176. What is Facade design pattern in which logger / slf4j is implemented?
+177. Which implementation slf4j uses for logging.
+178. Name 10 GIT commands. Explain each command.
+179. What is the difference between checked and unchecked exceptions.
+179a.  What is super and this keyword in java.
+179b. What is the difference between method overloading and method overriding.
+179c.  What is ternary operator.
+179d. What is parallel streams.  What is the difference between streams and parallel streams.
+180. What is Mono and Flux.
+181. What is asynchronous programming.
+182, What is Reactor.
+183. What is backpressure.
+**********************************************************************************************************
+What are the key features of the Spring Framework?
+What is spring container?
+What is Dependency Injection (DI), and how does Spring implement it?
+Explain the difference between BeanFactory and ApplicationContext.
+What are the different scopes of a Spring bean?
+What is the difference between constructor injection and setter injection?
+How does Spring manage bean life cycle?
+What is Spring Boot, and how is it different from the Spring Framework?
+What is the difference between Eager Loading and Lazy Loading in Hibernate/Spring?
+What is prototype annotation?
+What is @Value and @@PropertySource annotation?
+What is the purpose of @Component, @Service, @Repository, and @Controller annotations?
+What is a @Bean annotation, and how is it different from @Component?
+What is the use of the @Qualifier annotation in Spring?
+What is JUnit, and why is it used?
+Explain the difference between @Before, @BeforeEach, @After, and @AfterEach in JUnit.
+How do you test Spring beans using JUnit?
+What is @MockBean, and how is it different from @Mock in Spring Boot tests?
+What is the purpose of the @SpringBootApplication annotation?
+How does Spring Boot achieve auto-configuration?
+What are Spring Boot Starters, and why are they useful?
+How do you create a REST API in Spring Boot?
+What is the difference between application.properties and application.yml?
+How does Spring Boot handle exception handling globally?
+What is Spring Boot Actuator, and how does it help in monitoring applications?
+What is Spring MVC, and how does it work?
+What is the role of the DispatcherServlet in Spring MVC?
+Explain the Model-View-Controller (MVC) architecture in Spring.
+What is the difference between @Controller and @RestController?
+How does Spring MVC handle form submission?
+What are the different ways to define a View in Spring MVC?
+What is @RequestMapping, and how does it work?
+How can we handle exceptions in Spring MVC?
+What is a HandlerInterceptor in Spring MVC, and how is it used?
+What is the role of @PathVariable and @RequestParam in Spring MVC?
