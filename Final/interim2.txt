@@ -1,0 +1,20 @@
+OOPS concepts
+   - What is sterotype annotation? 
+   - Jpa method name to join two tables
+   - What is singleton design pattern, Factory Design pattern?
+   - Java 21/25 features
+   - SOLID Principles
+   - ACID Prop
+   - CAP Theorem
+   - Annotations - @configuration, @autowired, @Component, @Repository
+   - Mockito
+   - Spring Jpa method / Annotation
+   - SQL queries
+       - Left join, Right join 
+       - Find duplicates
+   - How to call Rest API using java - WebClient
+   - Spring security 
+   - Application context. 
+   - Spring AOP 
+   - Spring IOC
+ 
