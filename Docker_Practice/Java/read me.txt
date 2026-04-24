@@ -1,0 +1,32 @@
+Dockerfile for a Java Application
+A Dockerfile for a Java application should use an OpenJDK image, copy the compiled JAR file, and define an entry point to run the Java application.
+# Use OpenJDK as the base image
+FROM openjdk:17
+# Set the working directory inside the container
+WORKDIR /app
+# Copy the Java source file to the container
+COPY Sample.java /app/
+# Compile the Java program
+RUN javac Sample.java
+# Run the Java program when the container starts
+ENTRYPOINT ["java", "Sample"]
+
+Explanation of Commands
+•	FROM openjdk:17 → Uses OpenJDK 17 as the base image.
+•	WORKDIR /app → Sets /app as the working directory inside the container.
+•	COPY myapp.jar /app/myapp.jar → Copies the JAR file from the local system to the container.
+•	ENTRYPOINT ["java", "-jar", "myapp.jar"] → Runs the Java application inside the container.
+Step 2: Build the Docker Image
+Open Command Prompt (cmd) and navigate to E:\Dockerjava:
+cd E:\Dockerjava
+Run the following command to build the Docker image:
+________________________________________
+docker build -t my-java-app .
+________________________________________
+
+Step 3: Run the Docker Container
+Once the image is built, run the container:
+________________________________________
+docker run my-java-app
+________________________________________
+This will compile and run Sample.java inside a Docker container.
