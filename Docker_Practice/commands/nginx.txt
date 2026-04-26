@@ -1,0 +1,24 @@
+docker pull nginx
+
+docker images
+
+docker run --name my-nginx -p 2026:80 -d nginx
+
+docker ps -a
+
+docker exec my-nginx sh -c 'echo "<h1>My First Docker Site is Live!</h1>" > /usr/share/nginx/html/index.html'
+
+
+docker ps
+#remove container 
+
+docker rm -f my-nginx
+
+docker ps
+
+# remove image
+
+docker rmi nginx:latest
+
+docker images
+

@@ -1,0 +1,60 @@
+git clone https://github.com/ShekharGlobal/CTSInterns.git
+
+cd CTSInterns
+cd Docker_Practice
+cd Java
+
+printf "FROM eclipse-temurin:17-jdk\nWORKDIR /app\nCOPY Sample.java /app/\nRUN javac Sample.java\nENTRYPOINT [\"java\", \"Sample\"]" > Dockerfile
+
+docker build -t my-java-app:v2 .
+
+docker images
+docker ps -a
+
+docker run my-java-app
+
+docker login
+
+docker tag my-java-app 110044/cts-practice:v2
+
+docker push 110044/cts-practice:v2
+=============================================================================
+#now remove the container and image both so we can pull the image form docker hub and run
+
+#check container ID-
+
+docker ps -a
+
+Remove the container- docker rm -f e0d493d575e6
+
+================================================================================
+
+#pull the image
+docker pull 110044/cts-practice:v2
+
+docker run 110044/cts-practice:v2
+
+
+==============================================================================
+
+
+docker pull MySQL
+docker images
+docker ps -a
+
+docker run -d --name my-sql-server -e MYSQL_ROOT_PASSWORD=password123 -p 3308:3306 mysql
+
+docker ps
+
+docker exec -it my-sql-server mysql -u root -p
+
+
+SHOW DATABASES;
+
+CREATE DATABASE mydb;
+
+exit
+
+docker ps -a
+docker rm -f c00f21d559df
+docker rmi -f mysql 
