@@ -1,0 +1,34 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root  # Matches your application.properties
+      MYSQL_DATABASE: mydb       # Matches your application.properties
+    ports:
+      - "3306:3306"
+    networks:
+      - mynetwork
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: springboot-app
+    depends_on:
+      - mysql
+    ports:
+      - "8090:8090"  # Updated to your current port
+    environment:
+      # We point to 'mysql-db' because that is the service name/hostname in the network
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/mydb?allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SERVER_PORT: 8090
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
