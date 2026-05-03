@@ -1,0 +1,6 @@
+
+
+
+icacls "MyFirst.pem" /inheritance:r
+
+icacls "MyFirst.pem" /grant:r %username%:F
